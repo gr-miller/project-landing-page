@@ -1,6 +1,10 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 :root {
     --primary-white: #F9FAF8;
     --secondary-white: #E5E7EB;
@@ -18,6 +22,12 @@ body{
     font-optical-sizing: auto;   
 }
 
+img{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
 .dark-bg-color{
     background-color: var(--primary-black);
 }
@@ -34,15 +44,25 @@ body{
     font-size: 18px;
     color: var(--secondary-white);
 }
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 .header-logo-text{
     font-size: 24px;
+    font-weight: var(--text-bold);
+
+}
+.cta-bg,
+.btn{
+    background-color: var(--blue);
 }
 
-.btn-color{
-    color: var(--blue);
-}
-.cta-bg{
-    background-color: var(--blue);
+.btn{
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    border: none;
 }
 
 .info-header-text{
@@ -59,4 +79,54 @@ body{
     font-size: 36px;
     font-weight: 300;
     color: var(--primary-black);
+}
+
+.container,
+.header-container{
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+.container{
+    padding: 0 2.5rem;
+}
+
+.header-container{
+    padding: 1rem 2.5rem;
+}
+
+.padding-section{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    display: flex;
+    gap: 2rem;
+}
+
+.banner-container{
+    display: flex;
+    gap: 5rem;
+    width: 100%;
+    align-items: center;
+}
+
+.banner-text-content{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    width: 50%;
+}
+.banner-image-content{
+    flex: 1;
+    width: 50%;
+
 }
